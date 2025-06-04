@@ -1,14 +1,20 @@
-import Login from "./components/Login";
-import Register from "./components/Register";
+import Navbar from "./components/Navbar";
+import ComponentLib from "./components/ComponentLib";
+import Canvas from "./components/Canvas";
+import CodePreview from "./components/CodePreview";
 
 function App() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">LowCode NoCode</h1>
+      <Navbar/>
 
-      {/* <Login /> */}
-      <Register />
+      <div className="flex flex-row justify-between">
+        <ComponentLib />
+        <Canvas />
+        <CodePreview />
+      </div>
+
     </div>
   )
 }
