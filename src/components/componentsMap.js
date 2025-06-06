@@ -1,6 +1,5 @@
-// components/componentsMap.js
-import Login from './Login';
-import Register from './Register';
+import Login from './prebuilt/Login';
+import Register from './prebuilt/Register';
 
 export const componentsMap = {
   login: Login,

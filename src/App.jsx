@@ -1,20 +1,24 @@
 import Navbar from "./components/Navbar";
-import ComponentLib from "./components/ComponentLib";
-import Canvas from "./components/Canvas";
-import CodePreview from "./components/CodePreview";
+import Home from "./components/Home";
+import Create from "./components/Create";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import About from "./components/About";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
-    <div>
+    <div className="bg-white">
       <Navbar/>
 
-      <div className="flex flex-row justify-between">
-        <ComponentLib />
-        <Canvas />
-        <CodePreview />
-      </div>
-
+      <Routes>
+        <Route path="/" element={ <Home/>} />
+        <Route path="/create" element={ <Create/>} />
+        <Route path="/login" element={ <Login/>} />
+        <Route path="/signup" element={ <Register/>} />
+        <Route path="/about" element={ <About/>} />
+      </Routes>
     </div>
   )
 }

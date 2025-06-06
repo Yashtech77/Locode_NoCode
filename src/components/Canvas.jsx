@@ -15,7 +15,7 @@ const Canvas = () => {
 
     return (
         <div
-            className="border-2 border-red-400 w-full min-h-[90vh] p-4"
+            className="bg-[] rounded-lg w-full min-h-[90vh] p-4 m-2"
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}>
 
